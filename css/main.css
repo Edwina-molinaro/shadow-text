@@ -1,0 +1,24 @@
+*, body{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #381460;
+}
+
+h1{
+    color: #F6C3E5;
+    font-size: 10em;
+    font-family: Calibri;
+    text-shadow: 1px 1px 0 #A278B5;
+}
+
+span{
+
+}

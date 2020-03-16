@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Text Shadow</title>
+</head>
+    <body>
+
+        <div class="container">
+            <h1 id="text" contenteditable="true"><span>L</span>ongShadow</h1>
+        </div>
+
+        <div></div>
+
+        <script type="text/javascript">
+
+            /*var text = document.getElementById('text')
+            var shadow ='';
+            for(var i =0; i < 500; i++)
+            {
+                shadow +=(shadow? ',':'')+ i*1+'px '+ i*1+'px 0 #A278B5';
+            }
+            text.style.textShadow=shadow;
+*/
+
+            function shadow(maxWidth, id, color) {
+                var text = document.getElementById(id);
+                var shadow = '';
+                for (var i = 0; i < maxWidth; i++){
+                    shadow +=(shadow? ',':'')+i*1+'px '+i*1+'px 0 '+color;
+                }
+                text.style.textShadow=shadow;
+            }
+
+            shadow(500, 'text', '#A278B5');
+
+        </script>
+
+    </body>
+</html>
